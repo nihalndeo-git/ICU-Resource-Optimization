@@ -1,0 +1,11 @@
+
+> hospital-optimization-frontend@0.0.0 dev
+> vite --host 0.0.0.0
+
+[33mThe CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
+
+  VITE v5.4.21  ready in 156 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: http://172.20.10.2:5173/
+12:32:10 PM [vite] hmr update /src/App.jsx
