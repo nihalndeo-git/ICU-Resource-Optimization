@@ -35,16 +35,16 @@
 
  :: Spring Boot ::                (v4.0.3)
 
-2026-03-08T12:27:17.500+05:30  INFO 130422 --- [hospital-optimization-backend] [  restartedMain] h.HospitalOptimizationBackendApplication : Starting HospitalOptimizationBackendApplication using Java 21.0.10 with PID 130422 (/home/nihal/Documents/COLLEGE_STUFF/DAA_CP/hospital-optimization-backend/target/classes started by nihal in /home/nihal/Documents/COLLEGE_STUFF/DAA_CP/hospital-optimization-backend)
-2026-03-08T12:27:17.501+05:30  INFO 130422 --- [hospital-optimization-backend] [  restartedMain] h.HospitalOptimizationBackendApplication : No active profile set, falling back to 1 default profile: "default"
-2026-03-08T12:27:17.529+05:30  INFO 130422 --- [hospital-optimization-backend] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2026-03-08T12:27:17.530+05:30  INFO 130422 --- [hospital-optimization-backend] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2026-03-08T12:27:17.953+05:30  INFO 130422 --- [hospital-optimization-backend] [  restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
-2026-03-08T12:27:17.964+05:30  INFO 130422 --- [hospital-optimization-backend] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2026-03-08T12:27:17.964+05:30  INFO 130422 --- [hospital-optimization-backend] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
-2026-03-08T12:27:17.981+05:30  INFO 130422 --- [hospital-optimization-backend] [  restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 451 ms
-2026-03-08T12:27:18.166+05:30  INFO 130422 --- [hospital-optimization-backend] [  restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
-2026-03-08T12:27:18.170+05:30  INFO 130422 --- [hospital-optimization-backend] [  restartedMain] h.HospitalOptimizationBackendApplication : Started HospitalOptimizationBackendApplication in 0.877 seconds (process running for 1.083)
-2026-03-08T12:27:32.504+05:30  INFO 130422 --- [hospital-optimization-backend] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-03-08T12:27:32.505+05:30  INFO 130422 --- [hospital-optimization-backend] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2026-03-08T12:27:32.506+05:30  INFO 130422 --- [hospital-optimization-backend] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-03-09T11:05:24.423+05:30  INFO 5430 --- [hospital-optimization-backend] [  restartedMain] h.HospitalOptimizationBackendApplication : Starting HospitalOptimizationBackendApplication using Java 21.0.10 with PID 5430 (/home/nihal/Documents/COLLEGE_STUFF/DAA_CP/hospital-optimization-backend/target/classes started by nihal in /home/nihal/Documents/COLLEGE_STUFF/DAA_CP/hospital-optimization-backend)
+2026-03-09T11:05:24.427+05:30  INFO 5430 --- [hospital-optimization-backend] [  restartedMain] h.HospitalOptimizationBackendApplication : No active profile set, falling back to 1 default profile: "default"
+2026-03-09T11:05:24.490+05:30  INFO 5430 --- [hospital-optimization-backend] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-03-09T11:05:24.490+05:30  INFO 5430 --- [hospital-optimization-backend] [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-03-09T11:05:25.432+05:30  INFO 5430 --- [hospital-optimization-backend] [  restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-03-09T11:05:25.452+05:30  INFO 5430 --- [hospital-optimization-backend] [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-09T11:05:25.452+05:30  INFO 5430 --- [hospital-optimization-backend] [  restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-03-09T11:05:25.490+05:30  INFO 5430 --- [hospital-optimization-backend] [  restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 998 ms
+2026-03-09T11:05:25.932+05:30  INFO 5430 --- [hospital-optimization-backend] [  restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-03-09T11:05:25.940+05:30  INFO 5430 --- [hospital-optimization-backend] [  restartedMain] h.HospitalOptimizationBackendApplication : Started HospitalOptimizationBackendApplication in 2.06 seconds (process running for 2.631)
+2026-03-09T11:06:48.320+05:30  INFO 5430 --- [hospital-optimization-backend] [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-09T11:06:48.321+05:30  INFO 5430 --- [hospital-optimization-backend] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-09T11:06:48.324+05:30  INFO 5430 --- [hospital-optimization-backend] [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms

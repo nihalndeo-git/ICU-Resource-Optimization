@@ -19,7 +19,7 @@ public class ExperimentRunner {
 
         // 1. Generate parameters
         int numPatients = 15; // Example size within bounds [5, 30]
-        int capacity = simulator.generateCapacity();
+        int capacity = simulator.generateCapacity(numPatients);
 
         List<Patient> patients = simulator.generatePatients(numPatients);
 

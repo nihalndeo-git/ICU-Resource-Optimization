@@ -4,9 +4,7 @@
 
 [33mThe CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.[39m
 
-  VITE v5.4.21  ready in 156 ms
+  VITE v5.4.21  ready in 444 ms
 
   ➜  Local:   http://localhost:5173/
-  ➜  Network: http://172.20.10.2:5173/
-12:32:10 PM [vite] hmr update /src/App.jsx
-12:48:21 PM [vite] hmr update /src/App.jsx
+  ➜  Network: http://10.20.20.241:5173/

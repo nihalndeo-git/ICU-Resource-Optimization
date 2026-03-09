@@ -13,7 +13,7 @@ public class OptimizationService {
     public Scenario generateScenario(int numPatients) {
         return new Scenario(
             simulator.generatePatients(numPatients),
-            simulator.generateCapacity()
+            simulator.generateCapacity(numPatients)
         );
     }
 
