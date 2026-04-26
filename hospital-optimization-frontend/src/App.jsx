@@ -1,18 +1,14 @@
 import React, { useState } from 'react';
 import { Activity, Clock, Pill, Calendar, Map, Layers, Check, ChevronRight, Zap } from 'lucide-react';
-import ICUTriage from './components/ICUTriage';
-import ORScheduling from './components/ORScheduling';
-import DrugInventory from './components/DrugInventory';
-import StaffRostering from './components/StaffRostering';
-import AmbulanceRouting from './components/AmbulanceRouting';
+import CombinedComparison from './components/CombinedComparison';
 import './index.css';
 
 const MODULES = [
-  { id: 'icu',       label: 'ICU Triage',        icon: Activity,  component: ICUTriage,        color: '#3b82f6', description: '0/1 Knapsack — Maximize patient priority within ICU capacity' },
-  { id: 'or',        label: 'OR Scheduling',      icon: Clock,     component: ORScheduling,     color: '#a855f7', description: 'Weighted Interval Scheduling — Maximize OR utilization' },
-  { id: 'drug',      label: 'Drug Inventory',     icon: Pill,      component: DrugInventory,    color: '#10b981', description: 'Fractional vs 0/1 Knapsack — Optimize drug storage' },
-  { id: 'roster',    label: 'Staff Rostering',    icon: Calendar,  component: StaffRostering,   color: '#f59e0b', description: 'Job Scheduling — Minimize staff fatigue' },
-  { id: 'ambulance', label: 'Ambulance Routing',  icon: Map,       component: AmbulanceRouting, color: '#ef4444', description: 'Shortest Path — Dijkstra vs Nearest-Neighbour' },
+  { id: 'icu',       label: 'ICU Triage',        icon: Activity,  color: '#3b82f6', description: '0/1 Knapsack — Maximize patient priority within ICU capacity' },
+  { id: 'or',        label: 'OR Scheduling',      icon: Clock,     color: '#a855f7', description: 'Weighted Interval Scheduling — Maximize OR utilization' },
+  { id: 'drug',      label: 'Drug Inventory',     icon: Pill,      color: '#10b981', description: 'Fractional vs 0/1 Knapsack — Optimize drug storage' },
+  { id: 'roster',    label: 'Staff Rostering',    icon: Calendar,  color: '#f59e0b', description: 'Job Scheduling — Minimize staff fatigue' },
+  { id: 'ambulance', label: 'Ambulance Routing',  icon: Map,       color: '#ef4444', description: 'Shortest Path — Dijkstra vs Nearest-Neighbour' },
 ];
 
 const PARTS = [
@@ -206,7 +202,7 @@ function App() {
         </div>
       )}
 
-      {/* Locked State — Show Selected Modules */}
+      {/* Locked State — Show Combined Comparison */}
       {locked && (
         <div style={{ animation: 'fadeInUp 0.5s ease-out' }}>
           {/* Locked Banner */}
@@ -231,22 +227,8 @@ function App() {
             </button>
           </div>
 
-          {/* Module Components Grid */}
-          <div className={`modules-display modules-display-${selectedModules.length}`}>
-            {selectedModules.map(modId => {
-              const mod = MODULES.find(m => m.id === modId);
-              const Component = mod.component;
-              return (
-                <div key={modId} className="module-section">
-                  <div className="module-section-header" style={{ borderLeftColor: mod.color }}>
-                    {React.createElement(mod.icon, { size: 20, style: { color: mod.color } })}
-                    <span style={{ color: mod.color, fontWeight: 600 }}>{mod.label}</span>
-                  </div>
-                  <Component />
-                </div>
-              );
-            })}
-          </div>
+          {/* Combined Interdependent Comparison */}
+          <CombinedComparison modules={selectedModules} />
         </div>
       )}
     </div>

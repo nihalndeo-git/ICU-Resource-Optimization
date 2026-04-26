@@ -628,6 +628,164 @@ h3 { font-size: 1.1rem; }
 ::-webkit-scrollbar-thumb { background: var(--bg-secondary); border-radius: 4px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--text-secondary); }
 
+/* ========== COMBINED COMPARISON ========== */
+.combined-controls {
+  margin-bottom: 1.5rem;
+}
+
+.combined-controls-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.combined-controls-header h2 {
+  font-size: 1.3rem;
+}
+
+.combined-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.combined-stats-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.combined-stat {
+  flex: 1;
+  min-width: 160px;
+  padding: 1rem 1.25rem;
+  border-radius: 12px;
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid var(--glass-border);
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.combined-stat-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.combined-stat-value {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.combined-results {
+  margin-bottom: 1.5rem;
+}
+
+/* ========== MODULE BREAKDOWN ========== */
+.module-breakdown-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.module-breakdown-card {
+  padding: 1.25rem;
+  border-radius: 12px;
+  background: rgba(15, 23, 42, 0.5);
+  border: 1px solid var(--glass-border);
+  border-left: 3px solid;
+}
+
+.breakdown-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.breakdown-algo-label {
+  width: 50px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.breakdown-bar-bg {
+  flex: 1;
+  height: 20px;
+  background: rgba(15, 23, 42, 0.6);
+  border-radius: 4px;
+  overflow: hidden;
+  min-width: 60px;
+}
+
+.breakdown-bar-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.breakdown-value {
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  min-width: 120px;
+}
+
+/* ========== ITEMS TABLE ========== */
+.items-table {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--glass-border);
+}
+
+.items-table-header {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 0.7fr 0.7fr;
+  padding: 0.6rem 1rem;
+  background: rgba(15, 23, 42, 0.8);
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary);
+}
+
+.items-table-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 0.7fr 0.7fr;
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  border-top: 1px solid rgba(255, 255, 255, 0.03);
+  transition: all 0.2s ease;
+}
+
+.items-table-row:hover {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.items-row-greedy {
+  background: rgba(59, 130, 246, 0.08) !important;
+  border-left: 2px solid #3b82f6;
+}
+
+.items-row-dp {
+  background: rgba(16, 185, 129, 0.08) !important;
+  border-left: 2px solid #10b981;
+}
+
+.items-label {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
 /* ========== RESPONSIVE ========== */
 @media (max-width: 1200px) {
   .modules-display-3 { grid-template-columns: 1fr; }
